@@ -7,7 +7,7 @@ from PIL import Image, ImageOps
 @st.cache(allow_output_mutation = True)
 
 def load_model():
-    model = tf.keras.models.load_model("cnnMelanoma.hdf5")
+    model = tf.keras.models.load_model("cnnMelanomaX.hdf5")
     return model
 with st.spinner("loading model"):
     model = load_model()
